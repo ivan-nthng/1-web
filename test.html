@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scrolling Website</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			scroll-behavior: smooth;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		section {
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			font-size: 2em;
+			color: #fff;
+			background-size: cover;
+			background-position: center;
+			scroll-snap-align: start;
+			transition: transform 0.5s ease-in-out;
+		}
+
+		#section-1 {
+			background-image: url('https://picsum.photos/id/100/1000/1000');
+		}
+
+		#section-2 {
+			background-image: url('https://picsum.photos/id/200/1000/1000');
+		}
+
+		#section-3 {
+			background-image: url('https://picsum.photos/id/300/1000/1000');
+		}
+
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>My Scrolling Website</h1>
+	</header>
+
+	<section id="section-1">
+		<h2>Section 1</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor ipsum sit amet felis vehicula, eu venenatis lacus tincidunt. Nulla facilisi.</p>
+	</section>
+
+	<section id="section-2">
+		<h2>Section 2</h2>
+		<p>Sed consectetur quam nec nibh ullamcorper, in bibendum sem pellentesque. Sed faucibus pharetra dolor, nec bibendum mauris tempor et.</p>
+	</section>
+
+	<section id="section-3">
+		<h2>Section 3</h2>
+		<p>Phasellus sed sapien ut nisl laoreet lacinia at in odio. Donec faucibus metus id libero posuere, sed rutrum dolor venenatis.</p>
+	</section>
+
+	<footer>
+		<p>&copy; 2023 My Scrolling Website</p>
+	</footer>
+
+</body>
+</html>
+

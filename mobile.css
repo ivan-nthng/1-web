@@ -1,5 +1,37 @@
-@media screen and (max-width: 400px) {
-    body {
-      font-size: 18px;
-    }
+@media screen and (max-width: 460px) {
+
+
+  .tag {
+    background-color: #F1B72C;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 16px;
+    border-radius: 16px;
+    transition: background-color 0.3s ease;
+    margin: 0 0 8px 0;
   }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    text-align: center;
+    position: sticky;
+    top: 93vh;
+    width: 100%;
+    padding: 12px 12px 24px 12px;
+  }
+  section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    scroll-snap-align: start;
+    transition: transform 0.5s ease-in-out;
+    padding: 32px 12px 64px 12px;
+  }
+
+}

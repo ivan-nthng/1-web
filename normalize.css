@@ -3,6 +3,7 @@
 /* Box sizing */
 html {
     box-sizing: border-box;
+    -webkit-text-size-adjust: 100%; /* 2 */
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -13,10 +14,10 @@ html {
     margin: 0;
     padding: 0;
   }
-  
-  /* Typography */
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  h1 {
+    font-size: max(3em,min(5.833vw,5.25em));
+    line-height: max(45px,min(5vw,72px));
   }
   
   /* Links */
@@ -34,4 +35,24 @@ html {
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  main {
+    display: block;
+  }
+
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+
+  strong {
+    font-weight: bolder;
   }

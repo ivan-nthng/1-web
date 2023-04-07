@@ -21,5 +21,5 @@ function calculate() {
 
     // Display the result in a sentence
     var resultElement = document.getElementById("result");
-    resultElement.innerHTML = "With " + var1 + " variable power units improving your " + var2 + " variable by " + var3 * 100 + "% could save you $" + result + " per year on insurance.";
+    resultElement.innerHTML = "$" + result;
   }

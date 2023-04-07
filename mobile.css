@@ -12,6 +12,7 @@
     transition: background-color 0.3s ease;
     margin: 0 0 8px 0;
   }
+
   header {
     display: flex;
     align-items: center;
@@ -21,17 +22,37 @@
     position: sticky;
     top: 93vh;
     width: 100%;
+    z-index: 100;
     padding: 12px 12px 24px 12px;
   }
+
   section {
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     background-size: cover;
     background-position: center;
     scroll-snap-align: start;
     transition: transform 0.5s ease-in-out;
-    padding: 32px 12px 64px 12px;
+    padding: 0 12px 64px 12px;
+  }
+
+  .factor {
+    background-color: #F3F4F6;
+    border-radius: 16px;
+    padding: 32px 16px;
+  }
+
+  #section-2,
+  #section-3,
+  #section-4,
+  #section-5,
+  #section-6 {
+    margin: 0;
+  }
+
+  #section-1 {
+    height: 100vh;
   }
 
 }

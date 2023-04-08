@@ -62,8 +62,15 @@ body {
     color: #0077cc;
     text-decoration: none;
   }
+
   a:hover {
+    color: #0E0EA1;
     text-decoration: underline;
+  }
+
+  .tags a:hover {
+    text-decoration: none !important;
+    color: #0E0EA1;
   }
 
 
@@ -118,7 +125,8 @@ body {
       text-decoration: none;
     }
     a:hover {
-      text-decoration: underline;
+      text-decoration: none;
+      color: #0E0EA1;
     }
   
   }

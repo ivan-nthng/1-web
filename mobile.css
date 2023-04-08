@@ -1,4 +1,4 @@
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 560px) {
 
 
   .tag {
@@ -16,7 +16,8 @@
   header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap:24px;
     background-color: #fff;
     text-align: center;
     position: sticky;

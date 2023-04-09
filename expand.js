@@ -1,12 +1,17 @@
-function toggleExpand() {
-    var elements = document.querySelectorAll('.list');
-    for (var i = 0; i < elements.length; i++) {
-      var element = elements[i];
-      var height = element.scrollHeight;
-      if (element.clientHeight == height) {
-        element.style.height = "0px";
+var toggleButtons = document.querySelectorAll('.more');
+
+for (var i = 0; i < toggleButtons.length; i++) {
+  toggleButtons[i].addEventListener('click', function() {
+    var content = this.parentNode.querySelector('.list');
+    var height = content.scrollHeight;
+    if (content.clientHeight == height) {
+        content.style.height = "0";
+        this.textContent = "More";
       } else {
-        element.style.height = height + 'px';
+        content.style.height = height + 'px';
+        this.textContent = "Less";
       }
-    }
-  }
+    });
+}
+
+

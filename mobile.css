@@ -16,18 +16,26 @@
   header {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap:24px;
+    justify-content: space-between;
+    gap: 24px;
     background-color: #fff;
     text-align: center;
     position: sticky;
-    top: 93vh;
+    top: calc(100vh - 84px);
     width: 100%;
     z-index: 100;
     padding: 12px 12px 24px 12px;
   }
 
-  section {
+  footer {
+    padding: 12px 12px 96px 12px;
+  }
+
+  .line p {
+    display: none;
+  }
+
+  .container section {
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -48,14 +56,13 @@
   #driverQualification,
   #unsafeDriving,
   #drugAlcohol,
-  #hos
-  #accidents {
+  #hos #accidents {
     margin: 0;
   }
 
   #hero {
     height: 100vh;
-    max-width: 100%;
+
   }
 
   .ctas {
@@ -72,6 +79,12 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 12px;
-  
+
+  }
+
+  .float {
+    bottom: 96px;
+    right: 12px;
+  }
 
 }

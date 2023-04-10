@@ -143,6 +143,10 @@ button:hover {
   gap: 4px;
 }
 
+.more:hover {
+ background-color: transparent;
+}
+
 
 
 .ctas {

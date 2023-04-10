@@ -1,5 +1,90 @@
-@media screen and (max-width: 400px) {
-    body {
-      font-size: 18px;
-    }
+@media screen and (max-width: 560px) {
+
+
+  .tag {
+    background-color: #F1B72C;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 16px;
+    border-radius: 16px;
+    transition: background-color 0.3s ease;
+    margin: 0 0 8px 0;
   }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background-color: #fff;
+    text-align: center;
+    position: sticky;
+    top: calc(100vh - 84px);
+    width: 100%;
+    z-index: 100;
+    padding: 12px 12px 24px 12px;
+  }
+
+  footer {
+    padding: 12px 12px 96px 12px;
+  }
+
+  .line p {
+    display: none;
+  }
+
+  .container section {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    scroll-snap-align: start;
+    transition: transform 0.5s ease-in-out;
+    padding: 0 12px 64px 12px;
+  }
+
+  .factor {
+    background-color: #F3F4F6;
+    border-radius: 16px;
+    padding: 32px 16px;
+  }
+
+  #vehicleMaintenance,
+  #driverQualification,
+  #unsafeDriving,
+  #drugAlcohol,
+  #hos #accidents {
+    margin: 0;
+  }
+
+  #hero {
+    height: 100vh;
+
+  }
+
+  .ctas {
+    padding: 64px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 12px
+  }
+
+  .list-item {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+
+  }
+
+  .float {
+    bottom: 96px;
+    right: 12px;
+  }
+
+}

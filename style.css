@@ -43,6 +43,7 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   max-width: 80vw;
+  height: 76vh;
   padding-top: 128px;
 }
 
@@ -115,7 +116,7 @@ header {
   text-align: center;
   position: fixed;
   width: 100%;
-  padding: 24px;
+  padding: 12px 24px 12px 24px;
   z-index: 100;
 }
 
@@ -123,7 +124,7 @@ header {
 /* -------Buttons-------- */
 
 button {
-  padding: 12px 16px;
+  padding: 8px 16px;
 }
 
 button:hover {
